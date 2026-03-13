@@ -1,0 +1,28 @@
+# Личный Отбор — robots.txt
+# Доставка рыбы, морепродуктов и мяса по Москве и МО
+
+User-agent: *
+Allow: /
+
+# Не индексируем корзину и чекаут
+Disallow: /cart
+Disallow: /checkout
+
+# Разрешаем изображения товаров
+Allow: /products/
+
+# Sitemap (добавить после получения домена)
+# Sitemap: https://lichnyotbor.ru/sitemap.xml
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Disallow: /cart
+Disallow: /checkout
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /cart
+Disallow: /checkout
